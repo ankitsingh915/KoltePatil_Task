@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolte Patil</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body onload="showcity()">
+
+    <!-- Header -->
+
+    <header>
+        <nav class="navbar header fixed-top">
+            <div class="container-fluid">
+                <a  href="#">
+                    <img class="img2" src="./Assets/logo.jpg" >
+                </a>
+                <div class="nav1">
+                    <ul class="align" style="margin-left:-10vw ;" >
+                        <li class="lis nav-item">
+                            <a class="anc" href="">ABOUT US ></a>
+                        </li>
+                        <li nav-item class="lis">
+                            <a class="anc" href="">PROJECTS ></a>
+                        </li>
+                        <li class="lis nav-item">
+                            <a class="anc" href="">NRI LOUNGE</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="nav2 ">
+                    <div>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" style=" --bs-btn-font-size: 1.2vw;" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success"  type="submit">
+                                <img class="img3" src="./Assets/icons8-search-50.png">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="nav3">
+                        <ul class="align">
+                            <li class="lis2" >
+                                <button onclick="formShow()" type="button" style=" --bs-btn-font-size: 1.2vw;" class="btn btn-outline-warning">ENQUIRE NOW <span>></span></button>
+                            </li>
+                            <li class="lis2">
+                                <button type="button" style=" --bs-btn-font-size: 1.2vw" class="btn btn-outline-dark">ONLINE BOOKING <span>></span></button>
+                            </li>
+                            <li>
+                                <span class="navhide" id="navh">7440666541</span>
+                                <img class="img4" onmouseover="navhide1()" onmouseleave="navhide2()" src="https://i.pinimg.com/736x/f3/3c/c0/f33cc07fa0044261d61a6645a67ef496.jpg" alt="" width="20px" height="20px">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                
+                <div class="offcanvas-body">
+                    <ul>
+                    <h6>Mumbai Project</h6>
+                    <li><a class="anc2" href="">Life Republic</a> </li>
+                    <li><a class="anc2" href="">Ivy Estate</a> </li>
+                    <li><a class="anc2" href="">Three Jewels</a></li>
+                    <li><a class="anc2" href="">View All</a></li>
+                    </ul>
+                    
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- popup form -->
+    
+    <form class="form" id="frm" >
+        <h2 class="mp">ENQUIRE NOW <button onclick="close()" class="close">x</button></h2>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+      <!-- section -->
+
+      <div class="cities" id="city">
+        <div class="location">
+            <p>SELECT  <span>YOUR</span></p>
+            <p><b>LOCATION</b></p>
+            <a href="#slide_c1">
+                <div class="height_fix" onclick="showpune()" onmouseover="pune()">
+                    <h1 class="fnt1">Pune   <img src="./Assets/icon.png"></h1>
+                </div>
+            </a>
+            <a href="#slide_c2">
+                <div class="height_fix" onclick="showBangalore()" onmouseenter="Bangalore()" id="Bangalore">
+                    <h1 class="fnt1">Bangalore  <img src="./Assets/icon.png"></h1>
+                </div>
+            </a>
+            <a href="#slide_c3">
+                <div class="height_fix" onclick="showmumbai()" onmouseenter="mumbai()">
+                    <h1 class="fnt1">Mumbai  <img src="./Assets/icon.png"></h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- floating icons -->
+
+    <div class="whatsapp">
+        <a href="https://web.whatsapp.com/"><img class="whatsappimg" src="./Assets/icons8-whatsapp-40.png"></a>
+    </div>
+
+    <div class="msg_box">
+        <img class="msg_boximg" src="./Assets/icons8-communication-40.png">
+    </div>
+
+
+    <!-- slider section -->
+
+<div class="headcarousel"><span>EXPLORE </span>
+    <span class="headcarousel2">OUR FUTURE-READY ANTIFRAGILE SPACES</span>
+</div>
+    <div class="carousel_contain">
+        <div class="carousel1">
+            <div onmouseover="showc1()" class="slide_c1" id="slide_c1">
+                <div class="samec">
+                    <h1 class="propn fnt1" id="propn">Life Republic</h1>
+                    <h5 class="propcity fnt2">Hinjawadi, Pune</h5>
+                    <button type="button" style=" --bs-btn-font-size: 1.2vw;" class="btn btn-outline-warning">Explore Now ></button>
+                </div>
+            </div>
+            <div onmouseover="showc2()" class="slide_c2" id="slide_c2">
+                <div class="samec">
+                    <h1 class="propn fnt1">Ivy Estate</h1>
+                    <h5 class="propcity fnt2">Wagholi, Pune</h5>
+                    <button type="button" style=" --bs-btn-font-size: 1.2vw;" class="btn btn-outline-warning">Explore Now ></button>
+                </div>
+            </div>
+            <div onmouseover="showc3()" class="slide_c3" id="slide_c3">
+                <div class="samec">
+                    <h1 class="propn fnt1">Three Jewels</h1>
+                    <h5 class="propcity fnt2">Katraj-Kondwana Road, Pune</h5>
+                    <button type="button" style=" --bs-btn-font-size: 1.2vw;" class="btn btn-outline-warning">Explore Now ></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel_side">
+            
+                <h3 class="fnt3">Residental & Township</h3>
+                <h2 class="fnt1">Creating Space for a better Tomorrow</h2>
+                <h5 class="fnt2"><a href="">View all Projects ></a></h5>
+            
+        </div>
+    </div>
+   
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+    <script src="./index.js"></script>
+    
+
+</body>
+</html>

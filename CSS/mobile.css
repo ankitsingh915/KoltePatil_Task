@@ -1,0 +1,71 @@
+/* slider section */
+@media screen and (max-width: 400px){
+    
+
+
+body{
+    margin: 0vw;
+    padding: 0vw;
+}
+
+.location{
+    z-index: 10;
+    margin-left: 5vw;
+    display: flex; 
+    flex-direction: column;
+    padding: 1vw;
+    margin-top: 115vw;
+    width: 25vw;
+    height: 40vw;
+    background: rgba(0, 0, 0, 0.3) ;
+    background-blend-mode: darken;
+    color: white;
+}
+
+.carousel1{
+    display: flex;
+    flex-direction: row;
+    transition: 1s all;
+    height: 80vw;
+    width: 76%;
+}
+
+.samec{
+    padding-top: 30vw;
+}
+
+.carousel_side{
+    width: 24%;
+    background-color: rgba(0, 0, 0, 0.886);
+    color: white;
+    padding-top: 50vw;
+    padding-left: 2vw;
+}
+
+.fnt1{
+    font-size: 4vw;
+}
+
+.whatsapp{
+    position: fixed;  
+    margin-left: 90%; 
+    margin-top: 30vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.whatsappimg, .msg_boximg{
+    width: 7vw;
+}
+
+.msg_box{
+    position: fixed;  
+    margin-left: 90%; 
+    margin-top: 45vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+
+
+}

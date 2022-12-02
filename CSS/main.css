@@ -1,0 +1,267 @@
+/* header */
+
+.header{
+    background: rgba(243, 241, 241, 0.3) ;
+}
+
+.align{
+    display: flex;
+}
+
+.align li{
+    list-style-type: none;
+}
+
+.anc{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.anc2{
+    text-decoration: none;
+    color: black;
+}
+
+.lis{
+    padding-left: 2vw;
+}
+
+.lis2{
+    margin-right: 2vw;
+}
+
+.img2{
+    width: 6vw;
+}
+
+.img3{
+    width: 1vw;
+}
+
+.img4{
+    width: 2vw;
+    height: 2vw;
+    margin-top:0.5vw;
+}
+
+.fnt1{
+    font-size: 3vw;
+}
+
+.fnt3{
+    font-size: 2vw;
+}
+
+.fnt2{
+    font-size: 1.5vw;
+}
+
+.ic1{
+    width: 1vw;
+    padding-top: 0.5vw;
+}
+
+.nav1{
+    padding-left: 3vw;
+}
+
+.nav2{
+    display: flex;
+}
+
+.nav3, .nav1{
+    padding-top: 1vw;
+}
+
+.navhide{
+    display: none;
+    background-color: gray;
+    text-align: center;
+    position: absolute;
+    top: 2.5vw;
+    right: 15vw;
+    font-size: 18px;
+    width: 130px;
+    color: white;
+}
+
+.form{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    width: 30%;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+
+/* section */
+
+.cities{
+    background-image: url(../Assets/pune.jpg);
+    background-size: 100% 100%;
+    background-image: fill;
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    align-items: center;
+    margin-top: 7vw;
+}
+.location{
+    margin-left: 5vw;
+    display: flex; 
+    flex-direction: column;
+    padding: 1vw;
+    width: 25vw;
+    height: 22vw;
+    background: rgba(0, 0, 0, 0.3) ;
+    background-blend-mode: darken;
+    color: white;
+}
+.location p{
+    font-size: 1.2vw;
+    margin: 0vw;
+}
+.location span{
+    margin-left: 0.5vw;
+}
+.location a{
+    text-decoration: none;
+    color: white;
+}
+.location h1{
+    margin: 0.5vw 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location h1 img{
+    width: 1.6vw;
+    height: 1.6vw;
+}
+.location h1:hover{
+    font-size: 3.5vw;
+    border-bottom: 0.2vw solid white;
+    cursor: pointer;
+}
+.height_fix{
+    height: 5vw;
+}
+
+
+
+/* floating icons */
+
+.whatsapp{
+    position: fixed;  
+    margin-left: 95%; 
+    margin-top: -20vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.whatsappimg, .msg_boximg{
+    width: 3vw;
+}
+
+.msg_box{
+    position: fixed;  
+    margin-left: 95%; 
+    margin-top: -12vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+
+
+
+/* slider section */
+
+body{
+    margin: 0vw;
+    padding: 0vw;
+}
+.carousel1{
+    display: flex;
+    flex-direction: row;
+    transition: 1s all;
+    height: 35vw;
+    width: 76%;
+}
+
+.slide_c1{
+    background:url(./mariah-hewines-kE4rGJE-53g-unsplash.jpg);
+    background-size: cover;
+    width: 33.33%;
+    filter: brightness(50%);
+    transition: 1s all;
+}
+
+.slide_c1 div{
+    color: white;
+    margin-top: 20vw;
+    margin-left: 1vw;
+}
+.slide_c2{
+    background:url(./op23-a5uLuYTnnY4-unsplash.jpg);
+    background-size: cover;
+    width: 33.33%;
+    filter: brightness(50%);
+    transition: 1s all;
+}
+.slide_c2 div{
+    color: white;
+    margin-top: 20vw;
+    margin-left: 1vw;
+}
+.slide_c3{
+    background:url(./ryunosuke-kikuno-_KsH1mGPwCM-unsplash.jpg);
+    background-size: cover;
+    width: 33.33%;
+    filter: brightness(50%);
+    transition: 1s all;
+}
+.slide_c3 div{
+    color: white;
+    margin-top: 20vw;
+    margin-left: 1vw;
+}
+.carousel_side{
+    width: 24%;
+    background-color: rgba(0, 0, 0, 0.886);
+    color: white;
+    padding-top: 15vw;
+    padding-left: 2vw;
+}
+.carousel_side div{
+    margin-top: 20vw;
+    margin-left: 1vw;
+    align-self: baseline;
+}
+.carousel_side a{
+    color: rgba(255, 255, 255, 0.416);
+}
+.carousel_contain{
+    display: flex;
+    margin-bottom: 2vw;
+}
+.headcarousel{
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.headcarousel2{
+    background-image:  linear-gradient(45deg,yellow,orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
